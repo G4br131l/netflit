@@ -77,9 +77,9 @@ export function Footer() {
     <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center flex-col w-full bg-[#0F0F0F]">
       <div className=" flex flex-row justify-between w-full">
         {
-          sections.map(({name, contents}) => {
+          sections.map(({name, contents},i) => {
             return (
-              <div>
+              <div key={i}>
                 <h3 className=" text-[#FFFFFF]">{name}</h3>
                 <div className=" flex flex-col text-[#999999]">
                   {contents.map(({ref, content}) => (<a href={ref}>{content}</a>))}

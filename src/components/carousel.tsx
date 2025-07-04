@@ -4,12 +4,8 @@ import { ChevronRightIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   Card,
-  CardAction,
   CardContent,
-  CardDescription,
   CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card"
 import {
   Carousel as CarouselCompenet,
@@ -31,7 +27,11 @@ interface CarouselInterface {
 
 export function Carousel() {
   const props: CarouselInterface = {
-    title: "Our Genres"
+    title: "Our Genres",
+    cards: [{
+      title: "action",
+      link: "/"
+    }]
   }
 
   return (
