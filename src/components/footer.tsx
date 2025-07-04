@@ -82,7 +82,7 @@ export function Footer() {
               <div key={i}>
                 <h3 className=" text-[#FFFFFF]">{name}</h3>
                 <div className=" flex flex-col text-[#999999]">
-                  {contents.map(({ref, content}) => (<a href={ref}>{content}</a>))}
+                  {contents.map(({ref, content}, i) => (<a key={i} href={ref}>{content}</a>))}
                 </div>
               </div>
             )
